@@ -2,6 +2,7 @@
 
 html {
   font-size: 14px;
+  background-color: #333;
 }
 
 * {
@@ -41,12 +42,19 @@ MOBILE FIRST
 /* BODY */
 
 body {
+  background-color: var(--white);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 1.7rem;
+  border: 1px solid #333;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
 }
 
 /* IMAGE */
