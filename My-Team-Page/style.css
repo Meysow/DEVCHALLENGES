@@ -160,15 +160,9 @@ div span[class*="function"] {
     font-weight: bold;
 }
 
-/* MEDIA QUERIES */
+* MEDIA QUERIES */
 
-@media screen and (min-width: 600px) and (max-width: 760px) {
-    .main div {
-        width:auto;
-    }
-}
-
-@media screen and (min-width: 790px) {
+@media screen and (min-width: 700px) {
 
     body {
         padding: 7.75rem 1.3rem 2.1rem 1.3rem;
@@ -183,6 +177,10 @@ div span[class*="function"] {
 
     .header .title {
         width: 100%;
+    }
+
+    .title h1 {
+        white-space: nowrap;
     }
 
     .header .info {
@@ -205,17 +203,36 @@ div span[class*="function"] {
     }
 }
 
-@media screen and (min-width: 761px) {
+@media screen and (min-width: 700px) {
 
     .main {
         margin-right: -1.29rem;
-        max-width: 900px;
+        max-width: 64rem;
         padding-left: 0px;
     }
 
     .main div {
         width:auto;
         margin:0 1rem 0.7rem 0;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 700px) {
+    .header .info p {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 50%;
+        max-width: 26rem;
+    }
+
+    .header {
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .main div {
+        width: 27%;
     }
 
     .main div:nth-child(2n) {
