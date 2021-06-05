@@ -36,7 +36,7 @@
 
 ## Overview
 
-![screenshot](https://meysow.github.io/DEVCHALLENGES/Interior-Consultant/img/Demo-Interior-Consultant.png)
+![screenshot](https://meysow.github.io/DEVCHALLENGES/Interior-Consultant/img/Demo-Interior-Consultant.PNG)
 
 - View the [live demo](https://meysow.github.io/DEVCHALLENGES/My-Team-Page/)
 - 3rd DevChallenges project
