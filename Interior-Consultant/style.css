@@ -67,7 +67,10 @@ body {
   width: 66%;
   min-width: 250px;
   margin-bottom: 25px;
-  hyphens: none;
+}
+
+.eco {
+  white-space: nowrap;
 }
 
 /* BUTTON */
