@@ -377,6 +377,10 @@ ol li::before {
 }
 
 @media screen and (min-width: 880px) {
+  body {
+    padding-top: 3.71rem;
+  }
+
   .recipe .recipeName {
     font-size: 3.43rem;
     line-height: 4.57rem;
@@ -385,6 +389,13 @@ ol li::before {
   .recipe .description {
     font-size: 1rem;
     line-height: 1.21rem;
+    padding-bottom: 2.71rem;
+    margin-left: 2.79rem;
+  }
+
+  .description::before {
+    margin-left: -2.79rem;
+    margin-right: 1rem;
   }
 
   .ingredients .title {
@@ -395,10 +406,12 @@ ol li::before {
   .list h2 {
     font-size: 1.29rem;
     line-height: 1.71rem;
+    margin: 2.29rem 0 2.28rem 0;
   }
 
   li p {
     font-size: 1.14rem;
+    margin-left: 2.64rem;
   }
 
   .instructions h1 {
@@ -409,19 +422,23 @@ ol li::before {
   .information h3 {
     font-size: 0.71rem;
     line-height: 0.86rem;
-    padding: 0 2.3rem;
+    padding: 0 2.78rem 0.25rem;
   }
 
   .information h4 {
     font-size: 1rem;
     line-height: 1.21rem;
-    padding: 0 2.3rem;
+    padding: 0 2.78rem;
   }
 
   .orange::before,
   .clock::before {
     width: 25px;
     height: 25px;
+  }
+
+  ol li p {
+    margin-top: 2.5rem;
   }
 
   .main .informations {
