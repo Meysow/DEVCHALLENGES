@@ -37,7 +37,7 @@
 
 ## Overview
 
-![screenshot](https://meysow.github.io/DEVCHALLENGES/Recipe-Page/img/Demo-Recipe-Page.JPG)
+![screenshot](https://github.com/Meysow/DEVCHALLENGES/blob/main/Recipe-Page/img/Demo-Recipe-Page.jpg)
 
 - View the [live demo](https://meysow.github.io/DEVCHALLENGES/Recipe-Page/)
 - 4th DevChallenges project
