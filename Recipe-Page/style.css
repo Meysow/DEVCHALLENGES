@@ -221,7 +221,7 @@ p i {
 
 ul li::before {
   content: "";
-  display: inline-block;
+  display: block;
   width: 1.5rem;
   height: 1.5rem;
   float: left;
@@ -260,7 +260,7 @@ ol li::before {
   font-size: 1.71rem;
   text-align: center;
   line-height: 2.28rem;
-  display: inline-block;
+  display: block;
   width: 2.57rem;
   height: 2.57rem;
   float: left;
