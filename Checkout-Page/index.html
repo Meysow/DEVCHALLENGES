@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+  </style>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="https://meysow.github.io/DEVCHALLENGES/404-Not-Found/img/devchallenges.png" type="image/x-icon">
+  <script defer src="js/script.js"></script>
+  <script defer src="js/total.js"></script>
+  <title>Checkout-Page</title>
+</head>
+<body>
+  <header class="header">
+    <h1>Checkout</h1>
+  </header>
+
+  <main class="main">
+
+    <div class="card">
+
+      <div class="item">
+        <img src="img/photo1.png" alt="">
+        <div class="container">
+          <h4>Vintage Backbag</h4>
+          <div class="price">
+            <p class="newPrice" id="qnt_1" data-price="54.99">$54.99</p>
+            <p class="oldPrice" data-price="94.99">$94.99</p>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-btn">
+                <button id="down" class="btn btn-default" onclick=" down('0', 'myNumber1'); CalculateItemsValue();" ><span class="glyphicon glyphicon-minus"></span></button>
+              </div>
+                <input type="text" id="myNumber1" class="form-control input-number" readonly value="1" />
+              <div class="input-group-btn">
+                <button id="up" class="btn btn-default" onclick="up('10', 'myNumber1'); CalculateItemsValue();" ><span class="glyphicon glyphicon-plus"></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img/photo2.png" alt="">
+        <div class="container">
+          <h4>Levi Shoes</h4>
+          <div class="price">
+            <p class="newPrice" id="qnt_2" data-price="74.99">$74.99</p>
+            <p class="oldPrice" data-price="124.99">$124.99</p>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-btn">
+                <button id="downTwo" class="btn" onclick=" down('0', 'myNumber2'); CalculateItemsValue();"><span class="glyphicon glyphicon-minus"></span></button>
+              </div>
+                <input type="text" id="myNumber2" class="form-control input-number" readonly value="1" />
+              <div class="input-group-btn">
+                <button id="upTwo" class="btn" onclick="up('10', 'myNumber2'); CalculateItemsValue();"><span class="glyphicon glyphicon-plus"></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="recap">
+        <div class="total">
+          <h3>Shipping</h3>
+          <p id="shipping_cost" data-price="19">$19</p>
+        </div>
+        <div class="total">
+          <h3>Total</h3>
+          <p id="ItemsTotal">$148.98</p>
+        </div>
+      </div>
+
+    </div>
+
+    <form class="form" onsubmit="return validation()">
+      <h2>Contact infomation</h2>
+      <div class="form__container">
+        <label for="email">E-mail</label>
+        <i class="input__container"></i>
+        <input type="text" id="email" name="email" placeholder="Enter your email..." required>
+        <label for="phone">Phone</label>
+        <i class="input__container phone"></i>
+        <input type="number" id="phone" name="phone" placeholder="Enter your phone..." required>
+      </div>
+      <h2>Shipping address</h2>
+      <div class="form__container">
+        <label for="name">Full name</label>
+        <i class="input__container name"></i>
+        <input type="text" id="name" name="name" placeholder="Your Name.." required>
+        <label for="address">Shipping address</label>
+        <i class="input__container address"></i>
+        <input type="text" id="address" name="address" placeholder="Your address.." required>
+        <label for="city">City</label>
+        <i class="input__container city"></i>
+        <input type="text" id="city" name="city" placeholder="Your city.." required>
+        <div class="location form">
+          <div class="location__container">
+            <label for="country">Country</label>
+            <i class="input__container country"></i>
+            <select id="country" name="country" placeholder="Your country.." required>
+              <option value="" disabled selected hidden>Your Country...</option>
+              <option value="au">Australia</option>
+              <option value="ca">Canada</option>
+              <option value="fr">France</option>
+            </select>
+          </div>
+          <div class="location__container">
+            <label for="code">Postal Code</label>
+            <i class="input__container code"></i><input type="number" id="postal-code" name="postal-code" placeholder="Your postal code.." required>  
+          </div>
+        </div>
+        <div class="save">
+          <input type="checkbox" id="save" name="save">
+          <label for="save">Save this information for next time</label>
+        </div>
+        <div class="validation">
+          <button type="submit">Continue</button>
+        </div>
+      </div>
+    </form>
+  </main>
+
+  <div class="footer">
+    <a href="https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO">created by <span class="sign">Meysow</span> - devChallenges.io</a>
+  </div>
+</body>
+</html>
