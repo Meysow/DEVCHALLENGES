@@ -51,6 +51,7 @@ body {
   font-size: 1.71rem;
   line-height: 2.07rem;
   margin-left: 0.43rem;
+  font-weight: 600;
 }
 
 /*   MAIN   */
@@ -179,6 +180,7 @@ body {
   font-size: 0.86rem;
   line-height: 1.07rem;
   color: var(--black);
+  font-weight: 600;
 }
 
 .container .price {
@@ -216,6 +218,7 @@ body {
 
 .total h3,
 .total p {
+  font-weight: 600;
   font-size: 1rem;
   line-height: 1.21rem;
   color: var(--grey1);
@@ -233,6 +236,7 @@ body {
 }
 
 .form h2 {
+  font-weight: 600;
   font-size: 1rem;
   line-height: 1.21rem;
   margin-bottom: 0.79rem;
