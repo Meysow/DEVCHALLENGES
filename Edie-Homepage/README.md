@@ -35,7 +35,7 @@
 
 ## Overview
 
-![screenshot](https://meysow.github.io/DEVCHALLENGES/My-Gallery/img/Demo-Edie-Homepage.PNG)
+![screenshot](https://meysow.github.io/DEVCHALLENGES/Edie-Homepage/img/Demo-Edie-Homepage.PNG)
 
 ### Built With
 
