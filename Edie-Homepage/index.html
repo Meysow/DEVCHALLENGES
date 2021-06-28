@@ -21,7 +21,7 @@
 <body>
   <header class="header">
     <div class="header__container">
-      <h1>Edie</h1>
+      <h1 id="home">Edie</h1>
       <div class="hamburger">
         <div class="btn not-active" onclick="showNav()">
           <span></span>
@@ -30,19 +30,19 @@
         </div>
         <div class="links">
           <div class="link">
-            <a href="">Home</a>
+            <a href="#home">Home</a>
           </div>
           <div class="link">
-            <a href="">Services</a>
+            <a href="#Services">Services</a>
           </div>
           <div class="link">
-            <a href="">Our Works</a>
+            <a href="#Our__Works">Our Works</a>
           </div>
           <div class="link">
-            <a href="">Clients</a>
+            <a href="#Clients">Clients</a>
           </div>
           <div class="link">
-            <a href="">Contact</a>
+            <a href="#Contact">Contact</a>
           </div>
         </div>
       </div>
@@ -74,7 +74,7 @@
       </div>
     </div>
 
-    <div class="offer">
+    <div class="offer" id="Services">
       <h2>We offer high demand services</h2>
       <div class="cards">
         <div class="card design">
@@ -113,7 +113,7 @@
       </div>
     </div>
 
-    <div class="showcase">
+    <div class="showcase" id="Our__Works">
       <h2>Good design means good business</h2>
       <div class="img__container">
         <div class="img__card">
@@ -157,7 +157,7 @@
       </div>
     </div>
 
-    <div class="review">
+    <div class="review" id="Clients">
       <p>“Fast and outstanding results. Edie understands their customer’s needs. They have a young and talented team.”
       </p>
       <div class="profil">
@@ -169,23 +169,23 @@
 
   </main>
 
-  <footer class="foot">
+  <footer class="foot" id="Contact">
     <div class="foot__container">
     <div class="links">
       <div class="link">
-        <a href="">Home</a>
+        <a href="#home">Home</a>
       </div>
       <div class="link">
-        <a href="">Services</a>
+        <a href="#Services">Services</a>
       </div>
       <div class="link">
-        <a href="">Our Works</a>
+        <a href="#Our__Works">Our Works</a>
       </div>
       <div class="link">
-        <a href="">Clients</a>
+        <a href="#Clients">Clients</a>
       </div>
       <div class="link">
-        <a href="">Contact</a>
+        <a href="#Contact">Contact</a>
       </div>
     </div>
     <div class="social">
@@ -206,7 +206,7 @@
       <form action="submit">
         <label for="email">Want us to contact you?</label>
         <div class="button__container">
-          <input type="text" id="email" name="email" placeholder="email" required>
+          <input type="text" id="emailTwo" name="email" placeholder="email" required>
           <button>Join</button>
         </div>
       </form>
