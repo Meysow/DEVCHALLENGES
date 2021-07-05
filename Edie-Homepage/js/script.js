@@ -1,10 +1,22 @@
-var btn = $('.btn');
+const btn = document.querySelector('.btn')
+const hamburger = document.querySelector('.hamburger')
+const menuLinks = document.querySelectorAll('.link')
 
-btn.on('click', function() {
-  $(this).toggleClass('active');
-  $(this).toggleClass('not-active');
-});
+function toggleMenu() {
+  btn.classList.toggle('active')
+  btn.classList.toggle('not-active')
 
-function showNav() {
-  document.getElementsByClassName("hamburger")[0].classList.toggle("active");
+  if (hamburger.classList.contains('active')) {
+    hamburger.classList.remove('active')
+  } else {
+    hamburger.classList.add('active')
+  }
 }
+
+btn.addEventListener('click', toggleMenu);
+
+menuLinks.forEach(
+  function(menuLink) {
+    menuLink.addEventListener('click', toggleMenu);
+  }
+)
