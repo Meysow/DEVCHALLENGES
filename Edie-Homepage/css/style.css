@@ -47,7 +47,7 @@ body {
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
-  padding: 1rem 0.71rem 0 0.71rem;
+  padding: 0 0.71rem 0 0.71rem;
 }
 
 .material-icons {
@@ -59,6 +59,10 @@ body {
   margin-bottom: 3.43rem;
 }
 
+.header__container {
+  padding-top: 1rem;
+}
+
 .header__container h1 {
   font-family: "Heebo", sans-serif;
   font-weight: 800;
@@ -67,12 +71,10 @@ body {
 }
 
 /*   MAIN   */
-.main {
-}
 
 /*  PITCH  */
 .container__pitch {
-  margin-bottom: 7.29rem;
+  margin-bottom: 5.29rem;
 }
 
 /* HEAD */
@@ -155,7 +157,7 @@ body {
   padding: 1rem 0 1rem 1.36rem;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.75rem;
   line-height: 1.5rem;
   color: var(--grey4);
   border: 1px solid transparent;
@@ -209,6 +211,7 @@ body {
 
 /*  OFFER  */
 .offer h2 {
+  padding-top: 2rem;
   font-size: 1.71rem;
   line-height: 2.57rem;
   max-width: 18.5rem;
@@ -218,7 +221,7 @@ body {
 
 /* CARDS */
 .offer .cards {
-  margin-bottom: 7.36rem;
+  margin-bottom: 5.36rem;
 }
 
 .cards .card {
@@ -315,6 +318,7 @@ body {
 }
 
 .showcase h2 {
+  padding-top: 2rem;
   font-size: 1.71rem;
   line-height: 2.57rem;
   margin-left: 2.5rem;
@@ -401,7 +405,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 7.14rem;
+  margin-bottom: 5.14rem;
 }
 
 .team__img .col {
@@ -432,6 +436,7 @@ body {
 
 /* Review */
 .review p {
+  padding-top: 2rem;
   font-size: 1.71rem;
   line-height: 2.57rem;
   margin-bottom: 2.5rem;
@@ -630,7 +635,11 @@ body {
   }
 
   body {
-    padding: 2rem 2.48rem 0;
+    padding: 0 2.48rem;
+  }
+
+  .header__container {
+    padding-top: 2rem;
   }
 
   .head p {
