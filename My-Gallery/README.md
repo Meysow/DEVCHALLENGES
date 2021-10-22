@@ -45,7 +45,6 @@
 - [HTML](https://www.w3schools.com/html/)
 - [CSS](https://www.w3schools.com/css/)
 - [JAVASCRIPT](https://www.w3schools.com/js/)
-- [LIGHTBOX by Lokesh Dhakar](https://lokeshdhakar.com/projects/lightbox2/)
 
 ## Features
 
