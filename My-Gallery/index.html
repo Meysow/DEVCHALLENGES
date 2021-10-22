@@ -8,16 +8,15 @@
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
     </style>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/lightbox.min.css">
-    <script src="js/lightbox-plus-jquery.min.js"></script>
     <link rel="shortcut icon" href="https://meysow.github.io/DEVCHALLENGES/404-Not-Found/img/devchallenges.png" type="image/x-icon">
+    <script defer src="js/script.js"></script>
     <title>My Gallery</title>
   </head>
 
   <body>
     <header class="header">
       <div class="fiche">
-        <a href="img/profilePhoto.JPG" data-lightbox="profilpic"><img src="img/profilePhoto.JPG" alt=""></a>
+        <img src="img/profilePhoto.JPG" alt="">
         <h1>El Non-NouNou</h1>
         <h2>Saint-Pierre, La Réunion</h2>
       </div>
@@ -39,24 +38,30 @@
 
     <main class="main">
       <figure class="img1 pht">
-        <a href="img/photo1.jpg" data-lightbox="mygallery"><img src="img/photo1.jpg" alt=""></a>
+        <img src="img/photo1.jpg" alt="photo1" onclick="showImage(imgArray[0])">
       </figure>
       <figure class="img2 pht">
-        <a href="img/photo2.jpg" data-lightbox="mygallery"><img src="img/photo2.jpg" alt=""></a>
+        <img src="img/photo2.jpg" alt="photo2" onclick="showImage(imgArray[1])">
       </figure>
       <figure class="img3 pht">
-        <a href="img/photo3.jpg" data-lightbox="mygallery"><img src="img/photo3.jpg" alt=""></a>
+        <img src="img/photo3.jpg" alt="photo3" onclick="showImage(imgArray[2])">
       </figure>
       <figure class="img4 pht">
-        <a href="img/photo4.jpg" data-lightbox="mygallery"><img src="img/photo4.jpg" alt=""></a>
+        <img src="img/photo4.jpg" alt="photo4" onclick="showImage(imgArray[3])">
       </figure>
       <figure class="img5 pht">
-        <a href="img/photo5.jpg" data-lightbox="mygallery"><img src="img/photo5.jpg" alt=""></a>
+        <img src="img/photo5.jpg" alt="photo5" onclick="showImage(imgArray[4])">
       </figure>
       <figure class="img6 pht">
-        <a href="img/photo6.jpg" data-lightbox="mygallery"><img src="img/photo6.jpg" alt=""></a>
+        <img src="img/photo6.jpg" alt="photo6" onclick="showImage(imgArray[5])">
       </figure>
     </main>
+
+    <div class='lightbox' onclick="closeLightBox()">
+      <button onclick="event.stopPropagation(); showPrev()">❮</button>
+      <img class='pic' src='' alt='Selected image' />
+      <button onclick="event.stopPropagation(); showNext()"">❯</button>
+    </div>
 
     <div class="footer">
       <a href="https://devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY">created by <span class="sign">Meysow</span> - devChallenges.io</a>
